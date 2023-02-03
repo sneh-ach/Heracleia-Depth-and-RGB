@@ -2,7 +2,7 @@
 
 # Overview
 
-This code is written in Python and uses the OpenCV and DepthAI libraries to generate depth videos from stereo cameras. This code captures video and depth data from a device using the DepthAI library. The video data is captured from a color camera, and the depth data is captured from a stereo depth sensor. The depth data is transformed into a grayscale image and color-mapped for display. Both the video and depth data are then written to two separate .avi files. The code uses OpenCV for display and video writing.
+This code is using the OpenCV and DepthAI libraries to create a stereo depth pipeline and output two videos: one of the color frame and another of the disparity frame in color map. The pipeline consists of several nodes that are linked together to process the video feed from the stereo cameras. The nodes handle the properties of the cameras, stereo depth calculation, and outputting the video frames. The output videos are saved using the VideoWriter object of the OpenCV library and are written in XVID format. The color map used for the disparity frame is "COLORMAP_BONE". The code also creates windows to display the video frames in real-time and waits for the user to press 'q' to stop the loop and release the VideoWriter objects.
 
 # Dependencies
 
