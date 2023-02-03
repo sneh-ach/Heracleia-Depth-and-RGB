@@ -12,11 +12,11 @@ This code is using the OpenCV and DepthAI libraries to create a stereo depth pip
 
 # Usage
 
-Connect two stereo cameras to the device
-Run the code
-The depth and video streams will be displayed in two separate windows
-The depth video stream will be saved as 'Depth1.avi' in the 'VIDEO' directory on the Desktop
-The video stream will be saved as 'Video1.avi' in the 'VIDEO' directory on the Desktop
+1. Connect two stereo cameras to the device
+2. Run the code
+3. The depth and video streams will be displayed in two separate windows
+4. The depth video stream will be saved as 'Depth1.avi' in the 'VIDEO' directory on the Desktop
+5. The video stream will be saved as 'Video1.avi' in the 'VIDEO' directory on the Desktop
 
 # Customization
 
