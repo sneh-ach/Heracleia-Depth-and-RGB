@@ -6,9 +6,9 @@ This code is written in Python and uses the OpenCV and DepthAI libraries to gene
 
 # Dependencies
 
-OpenCV
-DepthAI
-NumPy
+- OpenCV
+- DepthAI
+- NumPy
 
 # Usage
 
