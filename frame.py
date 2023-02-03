@@ -3,7 +3,7 @@ import cv2
 import os
   
 # Read the video from specified path
-cam = cv2.VideoCapture("C:\\Users\\Admin\\PycharmProjects\\project_1\\openCV.mp4")
+cam = cv2.VideoCapture("path/for/file")
   
 try:
       
