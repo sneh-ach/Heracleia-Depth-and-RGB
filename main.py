@@ -50,8 +50,8 @@ depth.disparity.link(xout.input)
 
 with dai.Device(pipeline) as device:
 
-    q = device.getOutputQueue(name="Depth GreyScale", maxSize=4, blocking=False)
-    video = device.getOutputQueue(name="Video RGB", maxSize=4, blocking=False)
+    q = device.getOutputQueue(name="disparity", maxSize=4, blocking=False)
+    video = device.getOutputQueue(name="video", maxSize=4, blocking=False)
 
     # Define the codec and create VideoWriter object
     fourcc = cv2.VideoWriter_fourcc(*'XVID')
@@ -64,7 +64,7 @@ with dai.Device(pipeline) as device:
         frame = inDisparity.getFrame()
         frame = (frame * (255 / depth.initialConfig.getMaxDisparity())).astype(np.uint8)
 
-#       color_frame = cv2.applyColorMap(frame, cv2.COLORMAP_JET)
+#        color_frame = cv2.applyColorMap(frame, cv2.COLORMAP_JET)
         color_frame = cv2.applyColorMap(frame, cv2.COLORMAP_BONE)
         color_frame = cv2.resize(color_frame, (640, 400))
         videoIn = videoIn.getCvFrame()
